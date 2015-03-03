@@ -3,7 +3,6 @@ defined('C5_EXECUTE') or die("Access Denied.");
 
 class MrSetlessFilesPackage extends Package
 {
-
   protected $pkgHandle = 'mr_setless_files';
   protected $appVersionRequired = '5.6.1';
   protected $pkgVersion = '1.0';
@@ -35,7 +34,7 @@ class MrSetlessFilesPackage extends Package
     if (!empty($setless_fs)) {
       $setless_fs->delete();
     }
-    
+
     $pkg = parent::uninstall();
   }
 
@@ -73,4 +72,3 @@ class MrSetlessFilesPackage extends Package
     });
   }
 }
-?>
