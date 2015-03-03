@@ -28,6 +28,17 @@ class MrSetlessFilesPackage extends Package
     }
   }
 
+  public function uninstall()
+  {
+    $setless_fs = FileSet::getByName('Setless');
+
+    if (!empty($setless_fs)) {
+      $setless_fs->delete();
+    }
+    
+    $pkg = parent::uninstall();
+  }
+
   public function on_start()
   {
     Events::extend('on_file_add', function($f, $fv) {
