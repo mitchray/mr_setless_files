@@ -1,4 +1,4 @@
-# Fileset for Setless Files (concrete5 5.6)
+# Fileset for Setless Files (concrete5 5.7)
 Installing this package will create a new "Setless" fileset, and automatically add/remove files as needed.
 
 ## Setting Up
@@ -8,3 +8,6 @@ In the File Manager, filter the files by *In Set(s)* "Files In No Sets" and sele
 
 ##Next Steps
 Now you can control "Setless" files with Advanced Permissions!
+
+## 5.6 Version
+Check out the '5.6' branch for the original Concrete5 5.6 version.
